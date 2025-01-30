@@ -11,6 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
 
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/71d4fc89aa.js" crossorigin="anonymous"></script>
+
     <!-- DaisyUI CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
 
@@ -42,7 +45,53 @@
 <body class="font-sora">
 
     <!-- Header Section -->
-    <header></header>
+    <header class="bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3] mb-32">
+        <!-- Navbar -->
+        <nav class="md:container mx-auto mb-10">
+            <div class="navbar bg-base-100">
+                <!-- First Portion -->
+                <div class="navbar-start">
+                    <img class="w-3/12 md:w-1/6" src="./assets/logo-header.png" alt="">
+                </div>
+
+                <!-- Middle Portion -->
+                <div class="navbar-center hidden md:flex lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class="font-normal text-black">Product</a></li>
+                        <li><a class="font-normal text-black">Services</a></li>
+                        <li><a class="font-normal text-black">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Last Portion -->
+                <div class="navbar-end hidden md:flex lg:flex space-x-3">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <button class="btn btn-sm font-normal text-black border-nature-primary bg-white">Login</button>
+                    <button class="btn btn-sm font-normal text-white border-0 bg-nature-primary">Register</button>
+                </div>
+                <div class="navbar-end text-nature-primary md:hidden lg:hidden">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+            </div>
+        </nav>
+
+        <!-- Banner -->
+        <div>
+            <!-- Text Portion -->
+            <div class="mb-3 md:mb-10 mx-auto md:w-4/5 text-center">
+                <h3 class="text-5xl font-semibold text-black mb-8 md:w-5/6 mx-auto">Freshness <span class="text-nature-primary">You Can</span> <br> <span class="text-nature-primary">Count</span> On, Prices You’ll Love!</h3>
+                <p class="text-xl font-normal text-[#111111] md:w-4/6 mx-auto">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you
+                    covered every day!</p>
+            </div>
+
+            <!-- Image Portion -->
+            <div class="justify-items-center">
+                <img src="./assets/hero-vegetables.png" alt="">
+            </div>
+        </div>
+    </header>
 
     <!-- Main Section -->
     <main></main>
