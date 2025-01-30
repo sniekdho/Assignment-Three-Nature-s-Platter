@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nature's Platter</title>
+    <link rel="shortcut icon" href="./assets/vegetable-busket.png" type="image/x-icon">
 
     <!-- Google Sora Font CDN -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,6 +29,7 @@
                     colors: {
                         clifford: '#da373d',
                         "nature-primary": '#179800',
+                        "nature-secondary": '#EFEBE3',
                     }
                 }
             }
@@ -81,8 +83,11 @@
         <div>
             <!-- Text Portion -->
             <div class="mb-3 md:mb-10 mx-auto md:w-4/5 text-center">
-                <h3 class="text-5xl font-semibold text-black mb-8 md:w-5/6 mx-auto">Freshness <span class="text-nature-primary">You Can</span> <br> <span class="text-nature-primary">Count</span> On, Prices You’ll Love!</h3>
-                <p class="text-xl font-normal text-[#111111] md:w-4/6 mx-auto">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you
+                <h3 class="text-5xl font-semibold text-black px-5 mb-8 md:w-5/6 mx-auto">Freshness <span
+                        class="text-nature-primary">You Can</span> <br> <span class="text-nature-primary">Count</span>
+                    On, Prices You’ll Love!</h3>
+                <p class="text-xl font-normal text-[#111111] px-5 md:w-4/6 mx-auto">Shop your daily essentials at
+                    unbeatable prices. From fresh produce to pantry staples, we’ve got you
                     covered every day!</p>
             </div>
 
@@ -94,7 +99,50 @@
     </header>
 
     <!-- Main Section -->
-    <main></main>
+    <main>
+        <!-- Services Section -->
+        <section class="md:container mx-auto mb-10 px-5">
+            <!-- Title Portion-->
+            <h3 class="text-4xl font-semibold text-nature-primary mb-12">Services</h3>
+
+            <!-- Card Portion -->
+            <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
+                <!-- First Card -->
+                <div class="card bg-nature-secondary py-10">
+                    <figure class="bg-white rounded-full w-[150px] h-[150px] mx-auto">
+                        <img src="./assets/service.png" alt="" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-xl font-semibold text-[#111111]">24/7 Services</h2>
+                        <p class="text-xs text-[#111111a2] font-light">Late-night snacks, emergency groceries, or
+                            last-minute essentials—delivered 24/7.</p>
+                    </div>
+                </div>
+
+                <!-- Second Card -->
+                <div class="card bg-nature-secondary py-10">
+                    <figure class="bg-white rounded-full w-[150px] h-[150px] mx-auto">
+                        <img src="./assets/delivery.png" alt="" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-xl font-semibold text-[#111111]">Fast Delivery</h2>
+                        <p class="text-xs text-[#111111a2] font-light">Order anytime, and we’ll deliver fresh, high-quality products in record time.</p>
+                    </div>
+                </div>
+
+                <!-- Third Card -->
+                <div class="card bg-nature-secondary py-10">
+                    <figure class="bg-white rounded-full w-[150px] h-[150px] mx-auto">
+                        <img src="./assets/healthy.png" alt="" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-xl font-semibold text-[#111111]">Healthy Products</h2>
+                        <p class="text-xs text-[#111111a2] font-light">No preservatives, no artificial additives—just healthy, natural products.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer Section -->
     <footer></footer>
