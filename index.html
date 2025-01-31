@@ -41,6 +41,23 @@
         .font-sora {
             font-family: "Sora", serif;
         }
+
+        @keyframes bounce {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-30px);
+            }
+
+        }
+
+        .bounce-animation {
+            animation: bounce 2s ease-in-out infinite;
+        }
     </style>
 </head>
 
@@ -92,7 +109,7 @@
             </div>
 
             <!-- Image Portion -->
-            <div class="justify-items-center">
+            <div class="justify-items-center bounce-animation">
                 <img src="./assets/hero-vegetables.png" alt="">
             </div>
         </div>
@@ -343,8 +360,10 @@
                     <img src="./assets/vegetable-busket.png" alt="">
                 </div>
                 <div class="flex flex-col justify-center md:items-start items-center space-y-5 py-5 px-5">
-                    <h2 class="text-nature-primary text-center md:text-black text-4xl font-semibold">Get Grocery News!</h2>
-                    <p class="text-center text-black md:text-xl font-extralight">Exclusive training, tips, product deal and more.</p>
+                    <h2 class="text-nature-primary text-center md:text-black text-4xl font-semibold">Get Grocery News!
+                    </h2>
+                    <p class="text-center text-black md:text-xl font-extralight">Exclusive training, tips, product deal
+                        and more.</p>
                     <input type="text" placeholder="Enter email...." class="input w-full max-w-xs" />
                     <button class="px-5 py-1 rounded-lg bg-nature-primary text-white font-light">Subscribe</button>
                 </div>
@@ -354,7 +373,8 @@
     </main>
 
     <!-- Footer Section -->
-    <footer class="footer bg-nature-primary text-base-content pt-80 pb-40 px-5 md:px-20 md:justify-between md:items-center">
+    <footer
+        class="footer bg-nature-primary text-base-content pt-80 pb-40 px-5 md:px-20 md:justify-between md:items-center">
         <aside>
             <img src="./assets/logo-footer.png" alt="">
             <p class="text-white opacity-70 font-light">
